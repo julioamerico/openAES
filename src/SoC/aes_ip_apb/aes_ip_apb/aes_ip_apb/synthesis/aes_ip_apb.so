@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>aes_ip_apb</design>
+	<target_edif>E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb.edn</target_edif>
+</SynplifyOutput>

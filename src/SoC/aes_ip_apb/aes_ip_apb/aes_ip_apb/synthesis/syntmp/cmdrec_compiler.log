@@ -1,0 +1,26 @@
+C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\bin64\c_ver.exe  -osyn  E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\synwork\aes_ip_apb_comp.srs  -top  aes_ip_apb  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\  -I C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\dm  -ui -fid2 -ram -sharing on  -ll 2000 -autosm -lib COREAPB3_LIB E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v -lib COREAPB3_LIB E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3_iaddr_reg.v -lib COREAPB3_LIB E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3_muxptob3.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb\aes_ip_apb.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\aes_ip_apb_MSS.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\mss_tshell.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_core.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_ip.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\control_unit.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\datapath.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\data_swap.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\host_interface.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\key_expander.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\mix_columns.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\shift_rows.v -lib work E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox_8.v -loga  E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb.srr 
+rc:1 success:1
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\synwork\aes_ip_apb_comp.srs|o|1404659460|96278
+C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\proasic\smartfusion.v|i|1389697496|72817
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v|i|1403207453|29436
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3_iaddr_reg.v|i|1403207453|4253
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3_muxptob3.v|i|1403207453|5708
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v|i|1386636306|11243
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb\aes_ip_apb.v|i|1404659040|17402
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\aes_ip_apb_MSS.v|i|1404659038|52584
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1404659006|2824
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\mss_tshell.v|i|1404659019|12226
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_core.v|i|1404658030|3762
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_ip.v|i|1404658030|2563
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\control_unit.v|i|1404658030|9389
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\datapath.v|i|1404658030|9713
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\data_swap.v|i|1404658030|935
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\host_interface.v|i|1404658030|7928
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\key_expander.v|i|1404658030|3002
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\mix_columns.v|i|1404658030|2433
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox.v|i|1404658031|461
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\shift_rows.v|i|1404658031|2256
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox_8.v|i|1404658031|989
+E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb.srr|o|1404659460|24402
+C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\bin64\c_ver.exe|i|1389665658|5733376
+C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\bin\c_ver.exe|i|1389665444|2205696

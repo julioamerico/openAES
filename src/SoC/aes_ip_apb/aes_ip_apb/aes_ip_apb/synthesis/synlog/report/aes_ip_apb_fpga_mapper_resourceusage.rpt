@@ -1,0 +1,83 @@
+Target Part: A2F200M3F_FBGA484_-1
+Report for cell aes_ip_apb.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     3      1.0        3.0
+               AO1   120      1.0      120.0
+              AO1A    40      1.0       40.0
+              AO1B     2      1.0        2.0
+              AO1C     4      1.0        4.0
+              AO1D     7      1.0        7.0
+              AOI1     5      1.0        5.0
+             AOI1B     3      1.0        3.0
+               AX1    11      1.0       11.0
+              AX1A    28      1.0       28.0
+              AX1C    51      1.0       51.0
+              AX1D    37      1.0       37.0
+              AX1E     4      1.0        4.0
+            CLKINT     3      0.0        0.0
+               GND    19      0.0        0.0
+            MSSINT     2      0.0        0.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+               MX2  1110      1.0     1110.0
+              MX2A    42      1.0       42.0
+              MX2B    47      1.0       47.0
+              NOR2    25      1.0       25.0
+             NOR2A   237      1.0      237.0
+             NOR2B   683      1.0      683.0
+              NOR3    13      1.0       13.0
+             NOR3A    29      1.0       29.0
+             NOR3B    27      1.0       27.0
+             NOR3C    19      1.0       19.0
+               OA1     5      1.0        5.0
+              OA1A     4      1.0        4.0
+              OA1B     1      1.0        1.0
+              OA1C     9      1.0        9.0
+              OAI1     3      1.0        3.0
+               OR2   126      1.0      126.0
+              OR2A    23      1.0       23.0
+              OR2B    17      1.0       17.0
+               OR3   181      1.0      181.0
+              OR3A     5      1.0        5.0
+              OR3B     4      1.0        4.0
+              OR3C     1      1.0        1.0
+             RCOSC     1      0.0        0.0
+               VCC    19      0.0        0.0
+               XA1    41      1.0       41.0
+              XA1A     8      1.0        8.0
+              XA1B     1      1.0        1.0
+              XA1C     2      1.0        2.0
+              XAI1     1      1.0        1.0
+             XNOR2    18      1.0       18.0
+               XO1     5      1.0        5.0
+              XOR2   544      1.0      544.0
+              XOR3   199      1.0      199.0
+
+
+              DFN1    80      1.0       80.0
+            DFN1C0    42      1.0       42.0
+          DFN1E0P0     1      1.0        1.0
+          DFN1E1C0   703      1.0      703.0
+            DFN1P0    13      1.0       13.0
+                   -----          ----------
+             TOTAL  4630              4584.0
+
+
+  IO Cell usage:
+              cell count
+         BIBUF_MSS    19
+   BIBUF_OPEND_MSS     2
+         INBUF_MSS     7
+        OUTBUF_MSS    39
+       TRIBUFF_MSS     1
+                   -----
+             TOTAL    68
+
+
+Core Cells         : 4584 of 4608 (99%)
+IO Cells           : 68
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+

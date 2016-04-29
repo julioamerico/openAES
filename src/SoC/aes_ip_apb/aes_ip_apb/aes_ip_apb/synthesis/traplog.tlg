@@ -1,0 +1,28 @@
+@N: CD630 :".\gentmp2479a03856":4:7:4:9|Synthesizing work.top.gen 
+@N: CD630 :"syng0a03856":1366:7:1366:9|Synthesizing work.dec.fdec 
+@W: CD638 :"syng0a03856":1387:9:1387:13|Signal carry is undriven 
+@W: CD638 :"syng0a03856":1388:9:1388:12|Signal asup is undriven 
+@W: CD638 :"syng0a03856":1388:15:1388:18|Signal ssup is undriven 
+@N: CD630 :"syng0a03856":357:7:357:22|Synthesizing work.dwact_bl_fincdec.impl1 
+@W: CD280 :"syng0a03856":369:12:369:14|Unbound component INV mapped to black box
+@W: CD638 :"syng0a03856":474:9:474:9|Signal e is undriven 
+@N: CD630 :"syng0a03856":191:7:191:20|Synthesizing work.dwact_tl_l2xor.impl1 
+@W: CD280 :"syng0a03856":215:12:215:14|Unbound component OR3 mapped to black box
+@W: CD280 :"syng0a03856":223:12:223:16|Unbound component XNOR2 mapped to black box
+@N: CD630 :"syng0a03856":223:12:223:16|Synthesizing work.xnor2.syn_black_box 
+Post processing for work.xnor2.syn_black_box
+@N: CD630 :"syng0a03856":215:12:215:14|Synthesizing work.or3.syn_black_box 
+Post processing for work.or3.syn_black_box
+Post processing for work.dwact_tl_l2xor.impl1
+@N: CD630 :"syng0a03856":332:7:332:20|Synthesizing work.dwact_bl_xnor2.impl1 
+Post processing for work.dwact_bl_xnor2.impl1
+@N: CD630 :"syng0a03856":369:12:369:14|Synthesizing work.inv.syn_black_box 
+Post processing for work.inv.syn_black_box
+@N: CD630 :"syng0a03856":18:7:18:18|Synthesizing work.dwact_tl_gnd.impl1 
+@W: CD280 :"syng0a03856":38:10:38:12|Unbound component GND mapped to black box
+@N: CD630 :"syng0a03856":38:10:38:12|Synthesizing work.gnd.syn_black_box 
+Post processing for work.gnd.syn_black_box
+Post processing for work.dwact_tl_gnd.impl1
+Post processing for work.dwact_bl_fincdec.impl1
+Post processing for work.dec.fdec
+Post processing for work.top.gen

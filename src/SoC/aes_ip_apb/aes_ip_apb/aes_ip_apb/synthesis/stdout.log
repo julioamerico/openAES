@@ -1,0 +1,56 @@
+
+Starting:    C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\win64\mbin\synplify.exe
+Install:     C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1
+Date:        Sun Jul 06 12:08:44 2014
+Version:     I-2013.09M-SP1 
+
+Arguments:   -product synplify_pro aes_ip_apb_syn.prj
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+
+
+Implementation not found: synthesis
+OnSyncomMessage()
+OnSyncomMessage()
+log file: "E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb.srr"
+
+
+
+Running aes_ip_apb_syn|synthesis
+
+Running: Compile on aes_ip_apb_syn|synthesis
+
+Running: Compile Process on aes_ip_apb_syn|synthesis
+
+Running: Compile Input on aes_ip_apb_syn|synthesis
+Copied E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\synwork\aes_ip_apb_comp.srs to E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb.srs
+compiler Completed with warnings
+Return Code: 1
+Run Time:0h:00m:05s
+
+Complete: Compile Process on aes_ip_apb_syn|synthesis
+
+Running: Pre-mapping on aes_ip_apb_syn|synthesis
+premap Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Complete: Compile on aes_ip_apb_syn|synthesis
+
+Running: Map on aes_ip_apb_syn|synthesis
+
+Running: Map & Optimize on aes_ip_apb_syn|synthesis
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:13s
+
+Complete: Map on aes_ip_apb_syn|synthesis
+Complete: Logic Synthesis on aes_ip_apb_syn|synthesis
+exit status=0
+
+License checkin: synplifypro_actel

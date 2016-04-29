@@ -1,0 +1,10 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+@N: MF239 :"e:\julio\projetos\ips\aes\src\soc\aes_ip_apb\aes_ip_apb\hdl\key_expander.v":98:23:98:32|Found 4-bit decrementor, 'un3_rc_inv[4:1]'
+@N: FP130 |Promoting Net aes_ip_apb_MSS_0_M2F_RESET_N on CLKINT  I_86 
+@N: FP130 |Promoting Net aes_ip_0.AES_CORE.AES_CORE_DATAPATH.enc_dec_i_2 on CLKINT  I_87 
+@N: FP130 |Promoting Net aes_ip_0.AES_CORE.mode_ctr on CLKINT  I_88 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

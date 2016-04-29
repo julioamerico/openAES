@@ -1,0 +1,986 @@
+#Build: Synplify Pro I-2013.09M-SP1 , Build 034R, Jan 17 2014
+#install: C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1
+#OS: Windows 7 6.2
+#Hostname: JULIO
+
+#Implementation: synthesis
+
+$ Start of Compile
+#Sun Jul 06 12:10:57 2014
+
+Synopsys Verilog Compiler, version comp201309rcp1, Build 078R, built Jan 14 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\proasic\smartfusion.v"
+@I::"C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\vlog\scemi_pipes.svh"
+@I::"C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\vlog\hypermods.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3_iaddr_reg.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3_muxptob3.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb\aes_ip_apb.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\aes_ip_apb_MSS.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\mss_tshell.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_core.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_ip.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\control_unit.v"
+@I:"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\control_unit.v":"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\host_interface.h"
+@I:"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\control_unit.v":"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\control_unit_params.h"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\datapath.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\data_swap.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\host_interface.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\key_expander.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\mix_columns.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\shift_rows.v"
+@I::"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox_8.v"
+@I:"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox_8.v":"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sbox_functions.h"
+@W: CG775 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
+Verilog syntax check successful!
+Selecting top level module aes_ip_apb
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\host_interface.v":1:7:1:20|Synthesizing module host_interface
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\data_swap.v":1:7:1:15|Synthesizing module data_swap
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\shift_rows.v":1:7:1:16|Synthesizing module shift_rows
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox_8.v":3:7:3:12|Synthesizing module sBox_8
+
+@W: CG360 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox_8.v":16:11:16:18|No assignment to wire base_enc
+
+@W: CG360 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox_8.v":16:21:16:28|No assignment to wire base_dec
+
+@W: CG360 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox_8.v":19:11:19:23|No assignment to wire out_gf_inv8_2
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\sBox.v":1:7:1:10|Synthesizing module sBox
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\key_expander.v":1:7:1:18|Synthesizing module key_expander
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\mix_columns.v":1:7:1:17|Synthesizing module mix_columns
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\datapath.v":1:7:1:14|Synthesizing module datapath
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\control_unit.v":1:7:1:18|Synthesizing module control_unit
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_core.v":1:7:1:14|Synthesizing module aes_core
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_ip.v":1:7:1:12|Synthesizing module aes_ip
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
+
+@N: CG364 :"C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC
+
+@N: CG364 :"C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND
+
+@N: CG364 :"C:\Microsemi\Libero_v11.3\Synopsys\synplify_I201309MSP1\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:42|Synthesizing module aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":67:7:67:15|Synthesizing module BIBUF_MSS
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":85:7:85:21|Synthesizing module BIBUF_OPEND_MSS
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":145:7:145:12|Synthesizing module MSSINT
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\aes_ip_apb_MSS.v":9:7:9:20|Synthesizing module aes_ip_apb_MSS
+
+@W: CG775 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b010000
+	UPR_NIBBLE_POSN=4'b0011
+	IADDR_NOTINUSE=32'b00000000000000000000000000000000
+	IADDR_EXTERNAL=32'b00000000000000000000000000000001
+	IADDR_SLOT0=32'b00000000000000000000000000000010
+	IADDR_SLOT1=32'b00000000000000000000000000000011
+	IADDR_SLOT2=32'b00000000000000000000000000000100
+	IADDR_SLOT3=32'b00000000000000000000000000000101
+	IADDR_SLOT4=32'b00000000000000000000000000000110
+	IADDR_SLOT5=32'b00000000000000000000000000000111
+	IADDR_SLOT6=32'b00000000000000000000000000001000
+	IADDR_SLOT7=32'b00000000000000000000000000001001
+	IADDR_SLOT8=32'b00000000000000000000000000001010
+	IADDR_SLOT9=32'b00000000000000000000000000001011
+	IADDR_SLOT10=32'b00000000000000000000000000001100
+	IADDR_SLOT11=32'b00000000000000000000000000001101
+	IADDR_SLOT12=32'b00000000000000000000000000001110
+	IADDR_SLOT13=32'b00000000000000000000000000001111
+	IADDR_SLOT14=32'b00000000000000000000000000010000
+	IADDR_SLOT15=32'b00000000000000000000000000010001
+	SL0=16'b0000000000000001
+	SL1=16'b0000000000000000
+	SL2=16'b0000000000000000
+	SL3=16'b0000000000000000
+	SL4=16'b0000000000000000
+	SL5=16'b0000000000000000
+	SL6=16'b0000000000000000
+	SL7=16'b0000000000000000
+	SL8=16'b0000000000000000
+	SL9=16'b0000000000000000
+	SL10=16'b0000000000000000
+	SL11=16'b0000000000000000
+	SL12=16'b0000000000000000
+	SL13=16'b0000000000000000
+	SL14=16'b0000000000000000
+	SL15=16'b0000000000000000
+	SC=16'b0000000000000000
+	SC_qual=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+
+@W: CG360 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":242:12:242:20|No assignment to wire IA_PRDATA
+
+@N: CG364 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb\aes_ip_apb.v":9:7:9:16|Synthesizing module aes_ip_apb
+
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":70:36:70:40|Input IADDR is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":71:13:71:19|Input PRESETN is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":72:13:72:16|Input PCLK is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":103:18:103:25|Input PRDATAS1 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":104:18:104:25|Input PRDATAS2 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":105:18:105:25|Input PRDATAS3 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":106:18:106:25|Input PRDATAS4 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":107:18:107:25|Input PRDATAS5 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":108:18:108:25|Input PRDATAS6 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":109:18:109:25|Input PRDATAS7 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":110:18:110:25|Input PRDATAS8 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":111:18:111:25|Input PRDATAS9 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":112:18:112:26|Input PRDATAS10 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":113:18:113:26|Input PRDATAS11 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":114:18:114:26|Input PRDATAS12 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":115:18:115:26|Input PRDATAS13 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":116:18:116:26|Input PRDATAS14 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":117:18:117:26|Input PRDATAS15 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":120:13:120:20|Input PREADYS1 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":121:13:121:20|Input PREADYS2 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":122:13:122:20|Input PREADYS3 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":123:13:123:20|Input PREADYS4 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":124:13:124:20|Input PREADYS5 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":125:13:125:20|Input PREADYS6 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":126:13:126:20|Input PREADYS7 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":127:13:127:20|Input PREADYS8 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":128:13:128:20|Input PREADYS9 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":129:13:129:21|Input PREADYS10 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":130:13:130:21|Input PREADYS11 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":131:13:131:21|Input PREADYS12 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":132:13:132:21|Input PREADYS13 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":133:13:133:21|Input PREADYS14 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":134:13:134:21|Input PREADYS15 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":137:13:137:21|Input PSLVERRS1 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":138:13:138:21|Input PSLVERRS2 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":139:13:139:21|Input PSLVERRS3 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":140:13:140:21|Input PSLVERRS4 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":141:13:141:21|Input PSLVERRS5 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":142:13:142:21|Input PSLVERRS6 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":143:13:143:21|Input PSLVERRS7 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":144:13:144:21|Input PSLVERRS8 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":145:13:145:21|Input PSLVERRS9 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":146:13:146:22|Input PSLVERRS10 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":147:13:147:22|Input PSLVERRS11 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":148:13:148:22|Input PSLVERRS12 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":149:13:149:22|Input PSLVERRS13 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":150:13:150:22|Input PSLVERRS14 is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS15 is unused
+@W: CL157 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\MSS_CCC_0\aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
+@W: CL246 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_ip.v":11:15:11:19|Input port bits 31 to 6 of PADDR[31:0] are unused
+
+@W: CL246 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\aes_ip.v":11:15:11:19|Input port bits 1 to 0 of PADDR[31:0] are unused
+
+@N: CL201 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\control_unit.v":66:0:66:5|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 16 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+   1001
+   1010
+   1011
+   1100
+   1101
+   1110
+   1111
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\datapath.v":26:7:26:14|Input key_init is unused
+@W: CL159 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\datapath.v":37:7:37:23|Input key_derivation_en is unused
+@N: CL201 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\host_interface.v":181:0:181:5|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+@W: CL246 :"E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\hdl\host_interface.v":24:14:24:19|Input port bits 31 to 13 of PWDATA[31:0] are unused
+
+@END
+
+At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 94MB peak: 117MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Sun Jul 06 12:11:00 2014
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1154R, Built Jan 20 2014 10:14:08
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09M-SP1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\mss_tshell_syn.sdc
+@L: E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb_scck.rpt 
+Printing clock  summary report in "E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+
+Clock Summary
+**************
+
+Start       Requested     Requested     Clock        Clock      
+Clock       Frequency     Period        Type         Group      
+----------------------------------------------------------------
+FAB_CLK     28.6 MHz      35.000        declared     clk_group_0
+FCLK        28.6 MHz      35.000        declared     clk_group_0
+================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 52MB peak: 115MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jul 06 12:11:03 2014
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1154R, Built Jan 20 2014 10:14:08
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09M-SP1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+@W: MO111 :"e:\julio\projetos\ips\aes\src\soc\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_mss\mss_ccc_0\aes_ip_apb_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"e:\julio\projetos\ips\aes\src\soc\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_mss\mss_ccc_0\aes_ip_apb_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"e:\julio\projetos\ips\aes\src\soc\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_mss\mss_ccc_0\aes_ip_apb_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module aes_ip_apb_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 115MB)
+
+Encoding state machine state[4:0] (view:work.host_interface(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+@N:"e:\julio\projetos\ips\aes\src\soc\aes_ip_apb\aes_ip_apb\hdl\datapath.v":163:2:163:7|Found counter in view:work.datapath(verilog) inst genblk1\[3\]\.iv_3_[31:0]
+@N: MF239 :"e:\julio\projetos\ips\aes\src\soc\aes_ip_apb\aes_ip_apb\hdl\key_expander.v":98:23:98:32|Found 4-bit decrementor, 'un3_rc_inv[4:1]'
+@N:"e:\julio\projetos\ips\aes\src\soc\aes_ip_apb\aes_ip_apb\hdl\control_unit.v":382:0:382:5|Found counter in view:work.control_unit(verilog) inst rd_count[3:0]
+Encoding state machine state[15:0] (view:work.control_unit(verilog))
+original code -> new code
+   0000 -> 0000000000000001
+   0001 -> 0000000000000010
+   0010 -> 0000000000000100
+   0011 -> 0000000000001000
+   0100 -> 0000000000010000
+   0101 -> 0000000000100000
+   0110 -> 0000000001000000
+   0111 -> 0000000010000000
+   1000 -> 0000000100000000
+   1001 -> 0000001000000000
+   1010 -> 0000010000000000
+   1011 -> 0000100000000000
+   1100 -> 0001000000000000
+   1101 -> 0010000000000000
+   1110 -> 0100000000000000
+   1111 -> 1000000000000000
+
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 145MB peak: 153MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 139MB peak: 153MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 138MB peak: 166MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 139MB peak: 166MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 139MB peak: 166MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 138MB peak: 166MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 136MB peak: 166MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 166MB peak: 171MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                                                    Fanout, notes                   
+--------------------------------------------------------------------------------------------------------------
+aes_ip_apb_MSS_0.MSS_ADLIB_INST / M2FRESETn                                   750 : 750 asynchronous set/reset
+aes_ip_0.HOST_INTERFACE.aes_cr[1] / Q                                         65                              
+aes_ip_0.HOST_INTERFACE.aes_cr[2] / Q                                         129                             
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.last_round_pp2 / Q                        32                              
+aes_ip_0.HOST_INTERFACE.aes_cr[0] / Q                                         31                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.enc_dec_sbox / Y                          67                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.key1_mux_cnt / Y                          32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk3[0].key_3_2 / Y                    32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk3[1].key_2_2 / Y                    32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk3[2].key_1_2 / Y                    32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk3[3].key_0_2 / Y                    32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_en[0] / Y                             64                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_en[1] / Y                             64                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_en[2] / Y                             64                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_en[3] / Y                             64                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_en[3] / Y                             34                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_key_sel_rd[1] / Y                     64                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_key_sel_rd[0] / Y                     32                              
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.encrypt_decrypt_i_a2 / Y              238                             
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.mode_ctr / Y                          133                             
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.rk_sel_mux[1] / Y                         64                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.rk_sel_mux[0] / Y                         32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.add_rk_sel / Y                            32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.key_sel_mux / Y                           128                             
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_en[2] / Y                             33                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_en[0] / Y                             33                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.iv_bkp_mux / Y                            36                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_0_sqmuxa_1 / Y                32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_1_sqmuxa_1 / Y                32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_2_sqmuxa_1 / Y                32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_3_sqmuxa_1 / Y                32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_data_in14 / Y                         32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.data_in_1_sqmuxa / Y                      32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in15 / Y                              32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1[0].un4_bkp / Y                    34                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in14 / Y                              32                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_sbox_sel[1] / Y                       65                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_sbox_sel[0] / Y                       34                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_en[1] / Y                             33                              
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.iv_cnt_en_0_sqmuxa / Y                67                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1[3].iv_3_2 / Y                     37                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.IV_BKP_MUX_l3.iv_mux_out23_i_0_o2 / Y     35                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_0_sqmuxa_0_a2 / Y             33                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_1_sqmuxa_0_a2 / Y             33                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_2_sqmuxa_0_a2 / Y             33                              
+aes_ip_0.HOST_INTERFACE.read_en_0_0_a2 / Y                                    32                              
+aes_ip_0.HOST_INTERFACE.bus_out_mux_0_sqmuxa_0_a2 / Y                         32                              
+aes_ip_0.HOST_INTERFACE.bus_out_mux19_0_a2_i_o5 / Y                           33                              
+aes_ip_0.HOST_INTERFACE.bus_out_mux20_0_a2_i_o5 / Y                           33                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in_0_sqmuxa / Y                       64                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in_1_sqmuxa / Y                       64                              
+CoreAPB3_0.iPSELS[0] / Y                                                      37                              
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in13 / Y                              66                              
+aes_ip_0.HOST_INTERFACE.iv_en[0] / Y                                          32                              
+aes_ip_0.HOST_INTERFACE.iv_en[1] / Y                                          32                              
+aes_ip_0.HOST_INTERFACE.iv_en[2] / Y                                          32                              
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.rd_countlde_0_0 / Y                   128                             
+==============================================================================================================
+
+@N: FP130 |Promoting Net aes_ip_apb_MSS_0_M2F_RESET_N on CLKINT  I_86 
+@N: FP130 |Promoting Net aes_ip_0.AES_CORE.AES_CORE_DATAPATH.enc_dec_i_2 on CLKINT  I_87 
+@N: FP130 |Promoting Net aes_ip_0.AES_CORE.mode_ctr on CLKINT  I_88 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 166MB peak: 171MB)
+
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.rd_countlde_0_0, fanout 128 segments 6
+Replicating Combinational Instance aes_ip_0.HOST_INTERFACE.iv_en[2], fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.HOST_INTERFACE.iv_en[1], fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.HOST_INTERFACE.iv_en[0], fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in13, fanout 66 segments 3
+Replicating Combinational Instance CoreAPB3_0.iPSELS[0], fanout 37 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in_1_sqmuxa, fanout 64 segments 3
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in_0_sqmuxa, fanout 64 segments 3
+Replicating Combinational Instance aes_ip_0.HOST_INTERFACE.bus_out_mux20_0_a2_i_o5, fanout 33 segments 2
+Replicating Combinational Instance aes_ip_0.HOST_INTERFACE.bus_out_mux19_0_a2_i_o5, fanout 33 segments 2
+Replicating Combinational Instance aes_ip_0.HOST_INTERFACE.bus_out_mux_0_sqmuxa_0_a2, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.HOST_INTERFACE.read_en_0_0_a2, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_2_sqmuxa_0_a2, fanout 33 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_1_sqmuxa_0_a2, fanout 33 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_0_sqmuxa_0_a2, fanout 33 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.IV_BKP_MUX_l3.iv_mux_out23_i_0_o2, fanout 37 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1[3].iv_3_2, fanout 37 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.iv_cnt_en_0_sqmuxa, fanout 68 segments 3
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_en[1], fanout 33 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_sbox_sel[0], fanout 34 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_sbox_sel[1], fanout 65 segments 3
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in14, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1[0].un4_bkp, fanout 34 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_in15, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.data_in_1_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_data_in14, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_3_sqmuxa_1, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_2_sqmuxa_1, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_1_sqmuxa_1, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_mux_out_0_sqmuxa_1, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.iv_bkp_mux, fanout 40 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_en[0], fanout 33 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_en[2], fanout 33 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.key_sel_mux, fanout 128 segments 6
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.add_rk_sel, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.rk_sel_mux[0], fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.rk_sel_mux[1], fanout 64 segments 3
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_key_sel_rd[0], fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.un1_key_sel_rd[1], fanout 64 segments 3
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_en[3], fanout 35 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_en[3], fanout 64 segments 3
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_en[2], fanout 64 segments 3
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_en[1], fanout 64 segments 3
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.bkp_en[0], fanout 64 segments 3
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk3[3].key_0_2, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk3[2].key_1_2, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk3[1].key_2_2, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk3[0].key_3_2, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.key1_mux_cnt, fanout 32 segments 2
+Replicating Combinational Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.enc_dec_sbox, fanout 67 segments 3
+Replicating Sequential Instance aes_ip_0.HOST_INTERFACE.aes_cr[0], fanout 32 segments 2
+Replicating Sequential Instance aes_ip_0.AES_CORE.AES_CORE_DATAPATH.last_round_pp2, fanout 32 segments 2
+Replicating Sequential Instance aes_ip_0.HOST_INTERFACE.aes_cr[2], fanout 129 segments 6
+Replicating Sequential Instance aes_ip_0.HOST_INTERFACE.aes_cr[1], fanout 65 segments 3
+
+Added 0 Buffers
+Added 79 Cells via replication
+	Added 9 Sequential Cells via replication
+	Added 70 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 168MB peak: 171MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 839 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=================================== Non-Gated/Non-Generated Clocks ====================================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance               
+-------------------------------------------------------------------------------------------------------
+@K:CKID0001       aes_ip_apb_MSS_0     hierarchy              839        aes_ip_0.HOST_INTERFACE.cnt[1]
+=======================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 165MB peak: 171MB)
+
+Writing EDIF Netlist and constraint files
+I-2013.09M-SP1 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 171MB peak: 173MB)
+
+@W: MT246 :"e:\julio\projetos\ips\aes\src\soc\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_mss\aes_ip_apb_mss.v":1576:7:1576:19|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"e:\julio\projetos\ips\aes\src\soc\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_mss\aes_ip_apb_mss.v":1523:0:1523:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+Found clock FAB_CLK with period 35.00ns 
+Found clock FCLK with period 35.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Jul 06 12:11:15 2014
+#
+
+
+Top view:               aes_ip_apb
+Library name:           smartfusion
+Operating conditions:   COMWC-1 ( T = 70.0, V = 1.42, P = 1.48, tree_type = balanced_tree )
+Requested Frequency:    28.6 MHz
+Wire load mode:         top
+Wire load model:        smartfusion
+Paths requested:        5
+Constraint File(s):    E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\mss_tshell_syn.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 1.252
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group          
+-----------------------------------------------------------------------------------------------------------------
+FAB_CLK            28.6 MHz      33.7 MHz      35.000        29.682        5.318     declared     clk_group_0    
+FCLK               28.6 MHz      NA            35.000        NA            NA        declared     clk_group_0    
+System             100.0 MHz     114.3 MHz     10.000        8.748         1.252     system       system_clkgroup
+=================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+System    System   |  10.000      1.252   |  No paths    -      |  No paths    -      |  No paths    -    
+System    FAB_CLK  |  35.000      6.597   |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   System   |  35.000      29.467  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  35.000      5.318   |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FAB_CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                               Starting                                           Arrival          
+Instance                                                       Reference     Type         Pin     Net             Time        Slack
+                                                               Clock                                                               
+-----------------------------------------------------------------------------------------------------------------------------------
+aes_ip_0.HOST_INTERFACE.aes_cr[6]                              FAB_CLK       DFN1E1C0     Q       aes_mode[1]     0.627       5.318
+aes_ip_0.HOST_INTERFACE.aes_cr[5]                              FAB_CLK       DFN1E1C0     Q       aes_mode[0]     0.627       5.395
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.rd_count[1]            FAB_CLK       DFN1E1C0     Q       round[1]        0.627       7.415
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[3\]\.iv_3_[0]     FAB_CLK       DFN1E1C0     Q       iv_3_[0]        0.627       7.441
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.rd_count[3]            FAB_CLK       DFN1E1C0     Q       round[3]        0.627       7.467
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.rd_count[2]            FAB_CLK       DFN1E1C0     Q       round[2]        0.627       7.637
+aes_ip_0.HOST_INTERFACE.aes_cr[4]                              FAB_CLK       DFN1E1C0     Q       op_mode[1]      0.627       7.640
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[3\]\.iv_3_[1]     FAB_CLK       DFN1E1C0     Q       iv_3_[1]        0.627       7.858
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.state[9]               FAB_CLK       DFN1C0       Q       state[9]        0.627       8.208
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[3\]\.iv_3_[2]     FAB_CLK       DFN1E1C0     Q       iv_3_[2]        0.627       8.528
+===================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                 Starting                                      Required          
+Instance                                                         Reference     Type         Pin     Net        Time         Slack
+                                                                 Clock                                                           
+---------------------------------------------------------------------------------------------------------------------------------
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0_[20]     FAB_CLK       DFN1E1C0     D       N_1022     34.542       5.318
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[1\]\.bkp_1_[20]     FAB_CLK       DFN1E1C0     D       N_1088     34.542       5.318
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[2\]\.bkp_2_[20]     FAB_CLK       DFN1E1C0     D       N_1154     34.542       5.318
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[3\]\.bkp_3_[20]     FAB_CLK       DFN1E1C0     D       N_1220     34.542       5.318
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0_[4]      FAB_CLK       DFN1E1C0     D       N_1006     34.542       5.519
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[1\]\.bkp_1_[4]      FAB_CLK       DFN1E1C0     D       N_1072     34.542       5.519
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[2\]\.bkp_2_[4]      FAB_CLK       DFN1E1C0     D       N_1138     34.542       5.519
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[3\]\.bkp_3_[4]      FAB_CLK       DFN1E1C0     D       N_1204     34.542       5.519
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0_[0]      FAB_CLK       DFN1E1C0     D       N_1002     34.542       5.611
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0_[7]      FAB_CLK       DFN1E1C0     D       N_1009     34.542       5.611
+=================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      35.000
+    - Setup time:                            0.458
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         34.542
+
+    - Propagation time:                      29.224
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 5.318
+
+    Number of logic level(s):                24
+    Starting point:                          aes_ip_0.HOST_INTERFACE.aes_cr[6] / Q
+    Ending point:                            aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0_[20] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                                                                              Pin      Pin               Arrival     No. of    
+Name                                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------
+aes_ip_0.HOST_INTERFACE.aes_cr[6]                                              DFN1E1C0     Q        Out     0.627     0.627       -         
+aes_mode[1]                                                                    Net          -        -       1.007     -           4         
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.mode_ctr                               NOR2A        A        In      -         1.634       -         
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.mode_ctr                               NOR2A        Y        Out     0.534     2.168       -         
+mode_ctr_0                                                                     Net          -        -       0.274     -           1         
+I_88                                                                           CLKINT       A        In      -         2.442       -         
+I_88                                                                           CLKINT       Y        Out     0.148     2.590       -         
+aes_ip_0.AES_CORE.mode_ctr                                                     Net          -        -       1.362     -           136       
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.op_mode[1]                             NOR2A        B        In      -         3.952       -         
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.op_mode[1]                             NOR2A        Y        Out     0.346     4.298       -         
+op_mode[1]                                                                     Net          -        -       2.099     -           24        
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.state_RNIJSBQ[12]                      NOR2A        A        In      -         6.396       -         
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.state_RNIJSBQ[12]                      NOR2A        Y        Out     0.439     6.836       -         
+N_500_1                                                                        Net          -        -       0.328     -           2         
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.state_RNIADP02[11]                     NOR2B        B        In      -         7.164       -         
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.state_RNIADP02[11]                     NOR2B        Y        Out     0.439     7.603       -         
+state_RNIADP02[11]                                                             Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.state_RNIADP02_0[11]                   CLKINT       A        In      -         7.877       -         
+aes_ip_0.AES_CORE.AES_CORE_CONTROL_UNIT.state_RNIADP02_0[11]                   CLKINT       Y        Out     0.148     8.025       -         
+enc_dec_i_2                                                                    Net          -        -       1.362     -           246       
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.enc_dec_sbox_0                             OR2A         A        In      -         9.387       -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.enc_dec_sbox_0                             OR2A         Y        Out     0.457     9.844       -         
+enc_dec_sbox_0                                                                 Net          -        -       2.074     -           23        
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.KEY_EXPANDER.rot_in\[1\]_i_x2[4]           AX1A         A        In      -         11.917      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.KEY_EXPANDER.rot_in\[1\]_i_x2[4]           AX1A         Y        Out     0.845     12.762      -         
+N_564                                                                          Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk2\[3\]\.col_0__RNIU93R2[20]          MX2B         B        In      -         13.035      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk2\[3\]\.col_0__RNIU93R2[20]          MX2B         Y        Out     0.519     13.555      -         
+N_374                                                                          Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk2\[3\]\.col_0__RNIC0P04[20]          MX2          A        In      -         13.828      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk2\[3\]\.col_0__RNIC0P04[20]          MX2          Y        Out     0.484     14.312      -         
+N_438                                                                          Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk2\[3\]\.col_0__RNI5A4C6[20]          MX2          A        In      -         14.585      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk2\[3\]\.col_0__RNI5A4C6[20]          MX2          Y        Out     0.484     15.069      -         
+sbox_input[20]                                                                 Net          -        -       1.512     -           11        
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.rk_sel_pp2_RNIBAII7[1]                     MX2          A        In      -         16.580      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.rk_sel_pp2_RNIBAII7[1]                     MX2          Y        Out     0.484     17.064      -         
+N_598                                                                          Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.sbox_pp2_RNITCV28[20]                      MX2          A        In      -         17.338      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.sbox_pp2_RNITCV28[20]                      MX2          Y        Out     0.484     17.821      -         
+add_rd_key_in[20]                                                              Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.sbox_pp2_RNIDIJUU[20]                      XOR2         A        In      -         18.095      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.sbox_pp2_RNIDIJUU[20]                      XOR2         Y        Out     0.415     18.510      -         
+add_rd[20]                                                                     Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.MIX_COL.mix_out_dec_0_a2_RNIEQROV[20]      MX2          B        In      -         18.784      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.MIX_COL.mix_out_dec_0_a2_RNIEQROV[20]      MX2          Y        Out     0.498     19.282      -         
+add_rk_out_1[20]                                                               Net          -        -       1.211     -           6         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.MIX_COL.mix_out_dec_0_a2_RNI88EV21[20]     MX2          A        In      -         20.494      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.MIX_COL.mix_out_dec_0_a2_RNI88EV21[20]     MX2          Y        Out     0.484     20.977      -         
+un4_xor_input_bkp_iv[20]                                                       Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[2\]\.bkp_2__RNI71FPA2[20]         AX1D         C        In      -         21.251      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[2\]\.bkp_2__RNI71FPA2[20]         AX1D         Y        Out     0.415     21.666      -         
+xor_input_bkp_iv[20]                                                           Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[2\]\.bkp_2__RNI3TD9E2[20]         MX2          A        In      -         21.940      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[2\]\.bkp_2__RNI3TD9E2[20]         MX2          Y        Out     0.484     22.424      -         
+N_858                                                                          Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[1\]\.iv_1__RNICRLK13[20]          MX2          A        In      -         22.697      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[1\]\.iv_1__RNICRLK13[20]          MX2          Y        Out     0.484     23.181      -         
+data_in[20]                                                                    Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_sel_pp2_RNIC78714[0]                   NOR2B        A        In      -         23.454      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.col_sel_pp2_RNIC78714[0]                   NOR2B        Y        Out     0.415     23.870      -         
+data_in_m[20]                                                                  Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.MIX_COL.mix_out_dec_0_a2_RNIQDMI06[20]     AO1          C        In      -         24.143      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.MIX_COL.mix_out_dec_0_a2_RNIQDMI06[20]     AO1          Y        Out     0.558     24.701      -         
+col_in_2[84]                                                                   Net          -        -       1.007     -           4         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk2\[1\]\.col_2__RNII30T59[20]         OR3          C        In      -         25.708      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk2\[1\]\.col_2__RNII30T59[20]         OR3          Y        Out     0.581     26.289      -         
+col_in[20]                                                                     Net          -        -       1.420     -           9         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0__RNO_0[20]             MX2          A        In      -         27.709      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0__RNO_0[20]             MX2          Y        Out     0.484     28.193      -         
+N_989                                                                          Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0__RNO[20]               MX2          A        In      -         28.466      -         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0__RNO[20]               MX2          Y        Out     0.484     28.950      -         
+N_1022                                                                         Net          -        -       0.274     -           1         
+aes_ip_0.AES_CORE.AES_CORE_DATAPATH.genblk1\[0\]\.bkp_0_[20]                   DFN1E1C0     D        In      -         29.224      -         
+=============================================================================================================================================
+Total path delay (propagation time + setup) of 29.682 is 12.196(41.1%) logic and 17.486(58.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                    Starting                                                                                 Arrival          
+Instance                            Reference     Type        Pin              Net                                           Time        Slack
+                                    Clock                                                                                                     
+----------------------------------------------------------------------------------------------------------------------------------------------
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[4]      CoreAPB3_0_APBmslave0_PADDR[4]                0.000       1.252
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[5]      CoreAPB3_0_APBmslave0_PADDR[5]                0.000       1.279
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[12]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PADDR[12]     0.000       1.486
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          aes_ip_apb_MSS_0_MSS_MASTER_APB_PSELx         0.000       1.486
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[15]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PADDR[15]     0.000       1.498
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[3]      CoreAPB3_0_APBmslave0_PADDR[3]                0.000       1.505
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[14]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PADDR[14]     0.000       1.626
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[13]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PADDR[13]     0.000       1.725
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[2]      CoreAPB3_0_APBmslave0_PADDR[2]                0.000       4.029
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWRITE        CoreAPB3_0_APBmslave0_PWRITE                  0.000       4.518
+==============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                                                 Required          
+Instance                            Reference     Type        Pin              Net                                           Time         Slack
+                                    Clock                                                                                                      
+-----------------------------------------------------------------------------------------------------------------------------------------------
+aes_ip_apb_MSS_0.MSSINT_GPI_30      System        MSSINT      A                aes_ip_0_int_err                              10.000       1.252
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     PLLLOCK          MSS_ADLIB_INST_PLLLOCK                        10.000       5.038
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MACCLKCCC        MSS_ADLIB_INST_MACCLKCCC                      10.000       5.312
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[0]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[0]     10.000       5.643
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[1]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[1]     10.000       5.643
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[2]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[2]     10.000       5.643
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[3]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[3]     10.000       5.643
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[4]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[4]     10.000       5.643
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[5]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[5]     10.000       5.643
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[6]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[6]     10.000       5.643
+===============================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         10.000
+
+    - Propagation time:                      8.748
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     1.252
+
+    Number of logic level(s):                6
+    Starting point:                          aes_ip_apb_MSS_0.MSS_ADLIB_INST / MSSPADDR[4]
+    Ending point:                            aes_ip_apb_MSS_0.MSSINT_GPI_30 / A
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                  Pin             Pin               Arrival     No. of    
+Name                                                Type        Name            Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+aes_ip_apb_MSS_0.MSS_ADLIB_INST                     MSS_APB     MSSPADDR[4]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PADDR[4]                      Net         -               -       1.512     -           11        
+aes_ip_0.HOST_INTERFACE.bus_out_mux19_0_a2_i_o5     OR3A        B               In      -         1.512       -         
+aes_ip_0.HOST_INTERFACE.bus_out_mux19_0_a2_i_o5     OR3A        Y               Out     0.608     2.119       -         
+N_35                                                Net         -               -       1.849     -           16        
+aes_ip_0.HOST_INTERFACE.state_tr13_i_a3_0           NOR2A       B               In      -         3.968       -         
+aes_ip_0.HOST_INTERFACE.state_tr13_i_a3_0           NOR2A       Y               Out     0.346     4.314       -         
+N_127                                               Net         -               -       0.328     -           2         
+aes_ip_0.HOST_INTERFACE.state_tr13_i_a3             NOR2B       A               In      -         4.642       -         
+aes_ip_0.HOST_INTERFACE.state_tr13_i_a3             NOR2B       Y               Out     0.415     5.058       -         
+N_132                                               Net         -               -       0.328     -           2         
+aes_ip_0.HOST_INTERFACE.col_rd_en_0_a3              NOR2A       A               In      -         5.386       -         
+aes_ip_0.HOST_INTERFACE.col_rd_en_0_a3              NOR2A       Y               Out     0.439     5.825       -         
+N_133                                               Net         -               -       0.686     -           3         
+aes_ip_0.HOST_INTERFACE.state_RNICCTF[4]            NOR2B       B               In      -         6.512       -         
+aes_ip_0.HOST_INTERFACE.state_RNICCTF[4]            NOR2B       Y               Out     0.439     6.951       -         
+rd_err_en                                           Net         -               -       0.686     -           3         
+aes_ip_0.HOST_INTERFACE.aes_cr_RNIP3V41[8]          OA1         A               In      -         7.637       -         
+aes_ip_0.HOST_INTERFACE.aes_cr_RNIP3V41[8]          OA1         Y               Out     0.837     8.474       -         
+aes_ip_0_int_err                                    Net         -               -       0.274     -           1         
+aes_ip_apb_MSS_0.MSSINT_GPI_30                      MSSINT      A               In      -         8.748       -         
+========================================================================================================================
+Total path delay (propagation time + setup) of 8.748 is 3.085(35.3%) logic and 5.663(64.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+--------------------------------------------------------------------------------
+Target Part: A2F200M3F_FBGA484_-1
+Report for cell aes_ip_apb.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     3      1.0        3.0
+               AO1   120      1.0      120.0
+              AO1A    40      1.0       40.0
+              AO1B     2      1.0        2.0
+              AO1C     4      1.0        4.0
+              AO1D     7      1.0        7.0
+              AOI1     5      1.0        5.0
+             AOI1B     3      1.0        3.0
+               AX1    11      1.0       11.0
+              AX1A    28      1.0       28.0
+              AX1C    51      1.0       51.0
+              AX1D    37      1.0       37.0
+              AX1E     4      1.0        4.0
+            CLKINT     3      0.0        0.0
+               GND    19      0.0        0.0
+            MSSINT     2      0.0        0.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+               MX2  1110      1.0     1110.0
+              MX2A    42      1.0       42.0
+              MX2B    47      1.0       47.0
+              NOR2    25      1.0       25.0
+             NOR2A   237      1.0      237.0
+             NOR2B   683      1.0      683.0
+              NOR3    13      1.0       13.0
+             NOR3A    29      1.0       29.0
+             NOR3B    27      1.0       27.0
+             NOR3C    19      1.0       19.0
+               OA1     5      1.0        5.0
+              OA1A     4      1.0        4.0
+              OA1B     1      1.0        1.0
+              OA1C     9      1.0        9.0
+              OAI1     3      1.0        3.0
+               OR2   126      1.0      126.0
+              OR2A    23      1.0       23.0
+              OR2B    17      1.0       17.0
+               OR3   181      1.0      181.0
+              OR3A     5      1.0        5.0
+              OR3B     4      1.0        4.0
+              OR3C     1      1.0        1.0
+             RCOSC     1      0.0        0.0
+               VCC    19      0.0        0.0
+               XA1    41      1.0       41.0
+              XA1A     8      1.0        8.0
+              XA1B     1      1.0        1.0
+              XA1C     2      1.0        2.0
+              XAI1     1      1.0        1.0
+             XNOR2    18      1.0       18.0
+               XO1     5      1.0        5.0
+              XOR2   544      1.0      544.0
+              XOR3   199      1.0      199.0
+
+
+              DFN1    80      1.0       80.0
+            DFN1C0    42      1.0       42.0
+          DFN1E0P0     1      1.0        1.0
+          DFN1E1C0   703      1.0      703.0
+            DFN1P0    13      1.0       13.0
+                   -----          ----------
+             TOTAL  4630              4584.0
+
+
+  IO Cell usage:
+              cell count
+         BIBUF_MSS    19
+   BIBUF_OPEND_MSS     2
+         INBUF_MSS     7
+        OUTBUF_MSS    39
+       TRIBUFF_MSS     1
+                   -----
+             TOTAL    68
+
+
+Core Cells         : 4584 of 4608 (99%)
+IO Cells           : 68
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 55MB peak: 173MB)
+
+Process took 0h:00m:12s realtime, 0h:00m:12s cputime
+# Sun Jul 06 12:11:15 2014
+
+###########################################################]

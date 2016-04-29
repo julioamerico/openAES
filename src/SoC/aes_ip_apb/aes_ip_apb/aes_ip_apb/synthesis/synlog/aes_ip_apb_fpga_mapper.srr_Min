@@ -1,0 +1,220 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Jul 06 12:11:15 2014
+#
+
+
+Top view:               aes_ip_apb
+Operating conditions:   smartfusion.COMWC-2
+Requested Frequency:    28.6 MHz
+Wire load mode:         top
+Wire load model:        smartfusion
+Paths requested:        5
+Constraint File(s):    E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\mss_tshell_syn.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.192
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group          
+-----------------------------------------------------------------------------------------------------------------
+FAB_CLK            28.6 MHz      33.7 MHz      35.000        29.682        5.318     declared     clk_group_0    
+FCLK               28.6 MHz      NA            35.000        NA            NA        declared     clk_group_0    
+System             100.0 MHz     114.3 MHz     10.000        8.748         1.252     system       system_clkgroup
+=================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------
+System    System   |  0.000       0.192  |  No paths    -      |  No paths    -      |  No paths    -    
+System    FAB_CLK  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   System   |  0.000       1.292  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FAB_CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                       Starting                                                               Arrival          
+Instance                               Reference     Type         Pin     Net                                 Time        Slack
+                                       Clock                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------
+aes_ip_0.HOST_INTERFACE.bus_out[0]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[0]     0.494       1.457
+aes_ip_0.HOST_INTERFACE.bus_out[1]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[1]     0.494       1.457
+aes_ip_0.HOST_INTERFACE.bus_out[2]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[2]     0.494       1.457
+aes_ip_0.HOST_INTERFACE.bus_out[3]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[3]     0.494       1.457
+aes_ip_0.HOST_INTERFACE.bus_out[4]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[4]     0.494       1.457
+aes_ip_0.HOST_INTERFACE.bus_out[5]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[5]     0.494       1.457
+aes_ip_0.HOST_INTERFACE.bus_out[6]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[6]     0.494       1.457
+aes_ip_0.HOST_INTERFACE.bus_out[7]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[7]     0.494       1.457
+aes_ip_0.HOST_INTERFACE.bus_out[8]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[8]     0.494       1.457
+aes_ip_0.HOST_INTERFACE.bus_out[9]     FAB_CLK       DFN1E1C0     Q       CoreAPB3_0_APBmslave0_PRDATA[9]     0.494       1.457
+===============================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                                                 Required          
+Instance                            Reference     Type        Pin              Net                                           Time         Slack
+                                    Clock                                                                                                      
+-----------------------------------------------------------------------------------------------------------------------------------------------
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[0]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        1.292
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[1]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        1.292
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[2]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        1.292
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[3]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[3]     0.000        1.292
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[4]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[4]     0.000        1.292
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[5]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[5]     0.000        1.292
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[6]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[6]     0.000        1.292
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[7]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[7]     0.000        1.292
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[8]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[8]     0.000        1.292
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     FAB_CLK       MSS_APB     MSSPRDATA[9]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[9]     0.000        1.292
+===============================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.292
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.000
+    - Clock delay at ending point:           0.000 (ideal)
+0.000
+    = Slack (non-critical) :                 1.292
+
+    Number of logic level(s):                1
+    Starting point:                          aes_ip_0.HOST_INTERFACE.bus_out[0] / Q
+    Ending point:                            aes_ip_apb_MSS_0.MSS_ADLIB_INST / MSSPRDATA[0]
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                             Pin              Pin               Arrival     No. of    
+Name                                          Type         Name             Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+aes_ip_0.HOST_INTERFACE.bus_out[0]            DFN1E1C0     Q                Out     0.494     0.494       -         
+CoreAPB3_0_APBmslave0_PRDATA[0]               Net          -                -       0.192     -           1         
+CoreAPB3_0.u_mux_p_to_b3.PRDATA_0             NOR2B        A                In      -         0.685       -         
+CoreAPB3_0.u_mux_p_to_b3.PRDATA_0             NOR2B        Y                Out     0.415     1.101       -         
+aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[0]     Net          -                -       0.192     -           1         
+aes_ip_apb_MSS_0.MSS_ADLIB_INST               MSS_APB      MSSPRDATA[0]     In      -         1.292       -         
+====================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                    Starting                                                                                 Arrival          
+Instance                            Reference     Type        Pin              Net                                           Time        Slack
+                                    Clock                                                                                                     
+----------------------------------------------------------------------------------------------------------------------------------------------
+aes_ip_apb_MSS_0.MSSINT_GPI_30      System        MSSINT      Y                MSSINT_GPI_30_Y                               0.000       0.274
+aes_ip_apb_MSS_0.MSSINT_GPI_31      System        MSSINT      Y                MSSINT_GPI_31_Y                               0.000       0.274
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     SPI0DO           MSS_SPI_0_DO_D                                0.000       0.274
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     SPI0DOE          MSS_SPI_0_DO_E                                0.000       0.274
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLK           MSS_EMI_0_CLK_D                               0.000       0.328
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[13]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PADDR[13]     0.000       4.110
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[14]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PADDR[14]     0.000       4.150
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWRITE        CoreAPB3_0_APBmslave0_PWRITE                  0.000       4.220
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          aes_ip_apb_MSS_0_MSS_MASTER_APB_PSELx         0.000       4.259
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[15]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PADDR[15]     0.000       4.268
+==============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                                                     Required          
+Instance                            Reference     Type            Pin              Net                                           Time         Slack
+                                    Clock                                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------------------
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[30]          MSSINT_GPI_30_Y                               0.000        0.192
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB         GPI[31]          MSSINT_GPI_31_Y                               0.000        0.192
+aes_ip_apb_MSS_0.MSS_SPI_0_DO       System        TRIBUFF_MSS     D                MSS_SPI_0_DO_D                                0.000        0.192
+aes_ip_apb_MSS_0.MSS_SPI_0_DO       System        TRIBUFF_MSS     E                MSS_SPI_0_DO_E                                0.000        0.192
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB         EMCCLKRTN        MSS_EMI_0_CLK_D                               0.000        0.230
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[0]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        3.258
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[1]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        3.258
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[2]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        3.258
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[3]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[3]     0.000        3.258
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[4]     aes_ip_apb_MSS_0_MSS_MASTER_APB_PRDATA[4]     0.000        3.258
+===================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.192
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.000
+    - Clock delay at ending point:           0.000 (ideal)
+0.000
+    = Slack (critical) :                     0.192
+
+    Number of logic level(s):                0
+    Starting point:                          aes_ip_apb_MSS_0.MSSINT_GPI_30 / Y
+    Ending point:                            aes_ip_apb_MSS_0.MSS_ADLIB_INST / GPI[30]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                  Pin         Pin               Arrival     No. of    
+Name                                Type        Name        Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+aes_ip_apb_MSS_0.MSSINT_GPI_30      MSSINT      Y           Out     0.000     0.000       -         
+MSSINT_GPI_30_Y                     Net         -           -       0.192     -           1         
+aes_ip_apb_MSS_0.MSS_ADLIB_INST     MSS_APB     GPI[30]     In      -         0.192       -         
+====================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

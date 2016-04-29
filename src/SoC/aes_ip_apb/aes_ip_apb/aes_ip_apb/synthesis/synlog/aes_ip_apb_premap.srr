@@ -1,0 +1,39 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1154R, Built Jan 20 2014 10:14:08
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09M-SP1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\component\work\aes_ip_apb_MSS\mss_tshell_syn.sdc
+@L: E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb_scck.rpt 
+Printing clock  summary report in "E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+
+Clock Summary
+**************
+
+Start       Requested     Requested     Clock        Clock      
+Clock       Frequency     Period        Type         Group      
+----------------------------------------------------------------
+FAB_CLK     28.6 MHz      35.000        declared     clk_group_0
+FCLK        28.6 MHz      35.000        declared     clk_group_0
+================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file E:\Julio\Projetos\IPs\AES\src\SoC\aes_ip_apb\aes_ip_apb\synthesis\aes_ip_apb.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 52MB peak: 115MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jul 06 12:11:03 2014
+
+###########################################################]
